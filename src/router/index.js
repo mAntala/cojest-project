@@ -15,6 +15,11 @@ const routes = [
     path: '/recepty',
     name: 'Recipes',
     component: () => import(/* webpackChunkName: "about" */ '../views/Recipes.vue')
+  },
+  {
+    path: '/recept/:id',
+    name: 'Recipe',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Recipe.vue')
   }
 ];
 

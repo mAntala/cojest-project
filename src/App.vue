@@ -6,18 +6,26 @@
       <router-view :key="$route.fullPath"></router-view>
     </keep-alive>
 
+    <app-aside></app-aside>
+
     <app-navigation></app-navigation>
+
+    <app-footer></app-footer>
   </main>
 </template>
 
 <script>
 import AppNavigation from '@/components/AppNavigation';
 import AppHeader from '@/components/AppHeader';
+import AppAside from '@/components/AppAside';
+import AppFooter from '@/components/AppFooter';
 
 export default {
   components: {
     AppNavigation,
-    AppHeader
+    AppHeader,
+    AppAside,
+    AppFooter
   }
 }
 </script>

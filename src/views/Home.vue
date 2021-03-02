@@ -12,7 +12,7 @@
 
         <section class="content">
             <content-feed :content="slovakPosts" :title="'Slovenské recepty'"></content-feed>
-            <app-button :style="'margin-top: 1rem'" :full-width="true">Zobraziť viac receptov</app-button>
+            <app-button :style="'margin-top: 1rem'" :type="'secondary'" :full-width="true">Zobraziť viac receptov</app-button>
         </section>
     </div>
 </template>
@@ -34,11 +34,11 @@ export default {
         }
     },
     created() {
-        const request = fetch('https://www.cojest.sk/wp-json/cojest/v1/recipes?per_page=10', { method: 'GET' }).then(response => response.json());
+        const request = fetch('https://www.cojest.sk/wp-json/cojest/v1/recipes?per_page=5', { method: 'GET' }).then(response => response.json());
         const data = request.then(data => this.posts = data.data);
 
-        const requestTwo = fetch('https://www.cojest.sk/wp-json/cojest/v1/recipes?per_page=10&offset=10', { method: 'GET' }).then(response => response.json());
-        const dataTwo = request.then(data => this.slovakPosts = data.data);
+        const requestTwo = fetch('https://www.cojest.sk/wp-json/cojest/v1/recipes?per_page=5&offset=5', { method: 'GET' }).then(response => response.json());
+        const dataTwo = requestTwo.then(data => this.slovakPosts = data.data);
     }
 }
 </script>
