@@ -53,6 +53,7 @@ export default {
             border-top-left-radius: $border-radius;
             border-top-right-radius: $border-radius;
             width: 80px;
+            height: 80px;
         }
     }
 

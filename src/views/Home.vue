@@ -12,7 +12,9 @@
 
         <section class="content">
             <content-feed :content="slovakPosts" :title="'Slovenské recepty'"></content-feed>
-            <app-button :style="'margin-top: 1rem'" :type="'secondary'" :full-width="true">Zobraziť viac receptov</app-button>
+            <router-link :to="'/recepty/'">
+                <app-button :style="'margin-top: 1rem'" :type="'secondary'" :full-width="true">Zobraziť viac receptov</app-button>
+            </router-link>
         </section>
     </div>
 </template>

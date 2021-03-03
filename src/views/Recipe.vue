@@ -1,11 +1,14 @@
 <template>
-    <div>
-        Recept
-    </div>
+    <app-post :post="{}"></app-post>
 </template>
 
 <script>
+import AppPost from '@/components/AppPost';
+
 export default {
-    name: 'Recipe'
+    name: 'Recipe',
+    components: {
+        AppPost
+    }
 }
 </script>
