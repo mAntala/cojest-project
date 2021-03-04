@@ -62,4 +62,19 @@ p {
   font-size: 1rem;
   margin: 0 0 1rem 0;
 }
+
+strong {
+  color: $dark;
+  font-weight: 500;
+}
+
+a {
+  color: $main;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
 </style>

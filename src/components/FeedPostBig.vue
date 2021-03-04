@@ -136,6 +136,7 @@ export default {
 
         & > span {
             color: $dark;
+            font-size: 0.875rem;
         }
     }
 }

@@ -77,6 +77,7 @@ export default {
     color: $dark;
     display: flex;
     align-items: center;
+    transition: all .2s ease-in-out;
 
     &--icon {
         width: 16px;
