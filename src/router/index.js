@@ -20,6 +20,11 @@ const routes = [
     path: '/recept/:id',
     name: 'Recipe',
     component: () => import(/* webpackChunkName: "about" */ '../views/Recipe.vue')
+  },
+  {
+    path: '/oblubene',
+    name: 'Bookmarks',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Bookmarks.vue')
   }
 ];
 

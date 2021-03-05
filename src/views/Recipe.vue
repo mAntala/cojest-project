@@ -1,5 +1,8 @@
 <template>
-    <app-post v-if="post != null" :post="post"></app-post>
+    <div>
+        <app-post v-if="post != null" :post="post"></app-post>
+        <p v-else>Načítavam...</p>
+    </div>
 </template>
 
 <script>
