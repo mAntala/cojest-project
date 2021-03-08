@@ -25,6 +25,21 @@ const routes = [
     path: '/oblubene',
     name: 'Bookmarks',
     component: () => import(/* webpackChunkName: "about" */ '../views/Bookmarks.vue')
+  },
+  {
+    path: '/prihlasenie',
+    name: 'Login',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Login.vue')
+  },
+  {
+    path: '/registracia',
+    name: 'Register',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Register.vue')
+  },
+  {
+    path: '/spajza',
+    name: 'Pantry',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Pantry.vue')
   }
 ];
 

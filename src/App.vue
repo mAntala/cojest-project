@@ -6,11 +6,11 @@
       <router-view :key="$route.fullPath"></router-view>
     </keep-alive>
 
-    <app-aside></app-aside>
+    <app-aside v-if="!isLoginOrRegister"></app-aside>
 
     <app-navigation></app-navigation>
 
-    <app-footer></app-footer>
+    <app-footer v-if="!isLoginOrRegister"></app-footer>
   </main>
 </template>
 
@@ -26,6 +26,11 @@ export default {
     AppHeader,
     AppAside,
     AppFooter
+  },
+  computed: {
+    isLoginOrRegister() {
+      return this.$route.name === 'Login' || this.$route.name === 'Register';
+    }
   }
 }
 </script>

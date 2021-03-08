@@ -10,17 +10,11 @@ export default {
     props: {
         type: {
             type: String,
-            default: 'button__primary',
-            validator: (value) => {
-                return ['button__primary', 'button__secondary', 'button__small'].indexOf(value) !== 1;
-            }
+            default: 'button__primary'
         },
         size: {
             type: String,
-            default: 'button__big',
-            validator: (value) => {
-                return ['button__big', 'button__medium', 'button__small'].indexOf(value) !== 1;
-            }
+            default: 'button__big'
         },
         fullWidth: {
             type: Boolean,
